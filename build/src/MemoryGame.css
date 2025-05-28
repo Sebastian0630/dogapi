@@ -1,0 +1,46 @@
+.memory-container {
+  max-width: 900px;
+  margin: 2rem auto;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  margin-top: 2rem;
+}
+
+.grid.grid-5 {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.card {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s;
+}
+
+.card.empty {
+  background-color: transparent;
+  cursor: default;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card .back {
+  width: 100%;
+  height: 100%;
+  background-color: #3bee62;
+  border-radius: 10px;
+}
